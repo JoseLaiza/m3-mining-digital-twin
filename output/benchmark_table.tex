@@ -1,0 +1,17 @@
+% Table 2: Benchmark Comparison of Mine-to-Mill Dispatch & Optimization Policies
+\begin{table*}[t]
+\centering
+\caption{Comparative performance metrics across $N=5$ simulated 8-hour operational shifts (Mean $\pm$ Standard Deviation). Statistical significance tested via Welch's $t$-test relative to Baseline FIFO (* denotes $p < 0.05$).}
+\label{tab:dispatch_benchmarks}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Dispatch Policy} & \textbf{Throughput (TPH)} & \textbf{Shovel Queue (min)} & \textbf{SAG Energy (kWh/t)} & \textbf{Unit Cost (\$/t)} & \textbf{Reward $\mathcal{R}$} & \textbf{Welch's $t$-test vs Ref} \\
+\midrule
+\texttt{fixed} & $5268 \pm 45.5$ & $0.21 \pm 0.04$ & $11.44 \pm 0.56$ & $4.45 \pm 0.05$ & $6.79 \pm 0.92$ & Baseline (Ref.) \\
+\texttt{heuristic_min_queue} & $4974 \pm 32.86$ & $1.35 \pm 0.1$ & $11.62 \pm 0.55$ & $4.47 \pm 0.05$ & $6.28 \pm 1.05$ & -11.71 ($p < 0.001$)* \\
+\texttt{heuristic_expected_wait} & $4974 \pm 49.3$ & $1.31 \pm 0.16$ & $11.79 \pm 0.69$ & $4.48 \pm 0.06$ & $6 \pm 1.46$ & -9.8 ($p < 0.001$)* \\
+\texttt{drl_ppo_agent} & $4992 \pm 26.83$ & $1.28 \pm 0.06$ & $11.61 \pm 0.47$ & $4.47 \pm 0.04$ & $6.4 \pm 0.79$ & -11.68 ($p < 0.001$)* \\
+\bottomrule
+\end{tabular}
+\end{table*}
