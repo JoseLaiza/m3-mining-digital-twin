@@ -1,9 +1,12 @@
 # M-3 Mining Digital Twin: Drill-Blast-Load-Haul (Mine-to-Mill)
 
+[![Deploy to GitHub Pages](https://github.com/JoseLaiza/m3-mining-digital-twin/actions/workflows/deploy.yml/badge.svg)](https://github.com/JoseLaiza/m3-mining-digital-twin/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-brightgreen?logo=github&style=flat)](https://joselaiza.github.io/m3-mining-digital-twin/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0-blue.svg)](https://nodejs.org/)
-[![Bun](https://img.shields.io/badge/Bun-%3E%3D1.0-orange.svg)](https://bun.sh/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)](https://www.typescriptlang.org/)
+
+> 🚀 **Demo en Vivo disponible en:** [https://joselaiza.github.io/m3-mining-digital-twin/](https://joselaiza.github.io/m3-mining-digital-twin/)
 
 Plataforma de Simulación Digital Twin 3D y Optimización Multi-Objetivo (DRL & ABM) del ciclo **Drill-Blast-Load-Haul** para operaciones mineras a cielo abierto. Implementa modelado físico acoplado de fragmentación de roca (Kuz-Ram), colas estocásticas de carguío y acarreo ($M/G/1$), despacho dinámico y molienda SAG (Morrell / Bond).
 
